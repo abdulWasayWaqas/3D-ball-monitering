@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ball Bouncing in Room</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="info">Current Position: <span id="position"></span></div>
+    <div id="controls">
+        <button id="startStopButton">Stop</button>
+        <div id="previousPosition">Previous Position: <span id="prevPosition"></span></div>
+        <button id="clearDashboardButton">Clear Dashboard</button>
+        <button id="clearAllEntriesButton">Clear All Entries</button>
+        <button id="saveAllEntriesButton">Save All Entries</button>
+    </div>
+    
+    <div id="dashboard">
+        <h3>Position Dashboard</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>X</th>
+                    <th>Y</th>
+                    <th>Z</th>
+                    <th>Timestamp</th>
+                    <th>Action</th> 
+                </tr>
+            </thead>
+            <tbody id="positionTable">
+            </tbody>
+        </table>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
